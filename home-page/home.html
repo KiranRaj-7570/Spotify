@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Home</title>
+    <!-- CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,1,200 " />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="homeStyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar">
+            <div class="navSearch">
+                <div class="navlogo">
+                    <img src="./img/spotify-logo.png" alt="Spotify">
+                </div>
+                <div class="navHomeBtn">
+                    <button> <span class="material-symbols-rounded">home</span></button>
+                </div>
+                <div class="navSearchBox">
+                    <span class="searchLogo material-symbols-rounded"> search </span>
+                    <input type="text" placeholder="what do you want to play?">
+                    <div class="line"></div>
+                    <span class="browseIcon material-symbols-rounded">home_storage</span>
+                </div>
+            </div>
+            <div class="navLogins">
+                <div class="navOptions">
+                    <a href="" class="navOptionText">Premium</a>
+                    <a href="" class="navOptionText">Support</a>
+                    <a href="" class="navOptionText">Download</a>
+                </div>
+                <div class="line"></div>
+                <div class="navLoginInstall">
+                    <a href="" class="navInstall"><span
+                            class="installIcon material-symbols-rounded">arrow_circle_down</span>Install
+                        App</a>
+                    <a href="" class="navSignup">Sign up</a>
+                    <button class="navLogin">Login</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebarHeader">
+                <h3>Your library</h3>
+                <button class="plusIconBtn material-symbols-rounded">add_2</button>
+            </div>
+            <div class="sidebarContents">
+                <div class="sidePlaylist">
+                    <h3>Create your first playlist</h3>
+                    <p>It's easy we'll help you</p>
+                    <button>Create playlist</button>
+                </div>
+                <div class="sidePodcast">
+                    <h3>Lets find some podcasts to follow</h3>
+                    <p>we'll keep you updated on new episodes</p>
+                    <button>Browse podcasts</button>
+                </div>
+            </div>
+            <div class="sidebarFooter">
+                <ul class="footerContents">
+                    <li>Legal</li>
+                    <li>Safety&Privacy Center</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookies</li>
+                    <li>About Ads</li>
+                    <li>Accessibility</li>
+                </ul>
+                <a href="">Cookies</a>
+
+                <div class="language">
+                    <button><span class="langIcon material-symbols-rounded">language</span>English</button>
+                </div>
+            </div>
+        </aside>
+        <div class="main-container">
+            <!-- trending songs -->
+            <div class="trending">
+                <div class="trending-header">
+                    <h3>Trending Songs</h3>
+                    <a href="">Show all</a>
+                </div>
+                <div class="trending-swipe swiper">
+                    <ul class="trending-list swiper-wrapper">
+                        <li class="trending-slide swiper-slide">
+                            <div class="img-trend-wrapper">
+                                <img src="img/trending/eyesclosed.jpg" alt="" class="trending-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="trending-s-name">EYES CLOSED(with ZAYN)</p>
+                            <p class="trending-a-name"><a href="">JISOO, ZAYN</a></p>
+                        </li>
+                        <li class="trending-slide swiper-slide">
+                            <div class="img-trend-wrapper">
+                                <img src="img/trending/sundari.jpg" alt="" class="trending-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="trending-s-name">Sundari</p>
+                            <p class="trending-a-name"><a href="">Sanju Rathod,G-SPXRK</a></p>
+                        </li>
+                        <li class="trending-slide swiper-slide">
+                            <div class="img-trend-wrapper">
+                                <img src="img/trending/dude.jpg" alt="" class="trending-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="trending-s-name">Oorum Blood-From "Dude"</p>
+                            <p class="trending-a-name"><a href="">Sai Abhyankkar,Paal Dabba,bebhumika,...</a></p>
+                        </li>
+                        <li class="trending-slide swiper-slide">
+                            <div class="img-trend-wrapper">
+                                <img src="img/trending/merahua.jpg" alt="" class="trending-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="trending-s-name">Mera Hua(From "Ek Deewane Ki...</p>
+                            <p class="trending-a-name"><a href="">Annkur R Pathakk, Sachin Urmtosh</a></p>
+                        </li>
+                        <li class="trending-slide swiper-slide">
+                            <div class="img-trend-wrapper">
+                                <img src="img/trending/findingher.jpg" alt="" class="trending-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="trending-s-name">Finding Her</p>
+                            <p class="trending-a-name"><a href="">Kushagra, Bharath, Saaheal</a></p>
+                        </li>
+                        <li class="trending-slide swiper-slide">
+                            <div class="img-trend-wrapper">
+                                <img src="img/trending/jothum.jpg" alt="" class="trending-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="trending-s-name">Jo Tum Mere Ho</p>
+                            <p class="trending-a-name"><a href="">Anuv Jain</a></p>
+                        </li>
+                        <li class="trending-slide swiper-slide">
+                            <div class="img-trend-wrapper">
+                                <img src="img/trending/tuhaimeri.jpg" alt="" class="trending-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="trending-s-name">Tu Hai Meri(From "Sunny Sanscrit Ki Tul...</p>
+                            <p class="trending-a-name"><a href="">Sachet-Parampara, Sachet Tandon, Parambara...</a></p>
+                        </li>
+                        <li class="trending-slide swiper-slide">
+                            <div class="img-trend-wrapper">
+                                <img src="img/trending/kanthara.jpg" alt="" class="trending-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="trending-s-name">Varaha Roopam</p>
+                            <p class="trending-a-name"><a href="">B.Ajaneesh Loknath, Shasiraj Kavoor, Sai...</a></p>
+                        </li>
+                        <li class="trending-slide swiper-slide">
+                            <div class="img-trend-wrapper">
+                                <img src="img/trending/sahiba.jpg" alt="" class="trending-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="trending-s-name">Sahiba</p>
+                            <p class="trending-a-name"><a href="">Aditya Rikhari</a></p>
+                        </li>
+                        <li class="trending-slide swiper-slide">
+                            <div class="img-trend-wrapper">
+                                <img src="img/trending/kashish.jpg" alt="" class="trending-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="trending-s-name">BLACK RIDE</p>
+                            <p class="trending-a-name"><a href="">Dhanda Nyoliwala, Hammy Muzic</a></p>
+                        </li>
+                        <li class="trending-slide swiper-slide">
+                            <div class="img-trend-wrapper">
+                                <img src="img/trending/lal.jpg" alt="" class="trending-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="trending-s-name">Thakilu Pukilu(From "Ravanaprabhu")</p>
+                            <p class="trending-a-name"><a href="">M. G. Sreekumar, Prabhakaran, Mohanlal,...</a></p>
+                        </li>
+                        <li class="trending-slide swiper-slide">
+                            <div class="img-trend-wrapper">
+                                <img src="img/trending/deewane.jpg" alt="" class="trending-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="trending-s-name">Deewane</p>
+                            <p class="trending-a-name"><a href="">Navaan Sandhu, Bir</a></p>
+                        </li>
+                    </ul>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <!-- popular artists -->
+            <div class="artist">
+                <div class="artist-header">
+                    <h3>Popular artists</h3>
+                    <a href="">Show all</a>
+                </div>
+                <div class="artist-swipe swiper">
+                    <ul class="artist-list swiper-wrapper">
+                        <li class="artist-slide swiper-slide">
+                            <div class="img-artist-wrapper">
+                                <img src="img/artists/rex.jpeg" alt="" class="artist-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="artist-s-name">Rex Orange Country</p>
+                            <p class="artist-a-name"><a href="">Artist</a></p>
+                        </li>
+                        <li class="artist-slide swiper-slide">
+                            <div class="img-artist-wrapper">
+                                <img src="img/artists/arjit.jpg" alt="" class="artist-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="artist-s-name">Arjit Singh</p>
+                            <p class="artist-a-name"><a href="">Artist</a></p>
+                        </li>
+                        <li class="artist-slide swiper-slide">
+                            <div class="img-artist-wrapper">
+                                <img src="img/artists/arr.jpg" alt="" class="artist-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="artist-s-name">A.R. Rahman</p>
+                            <p class="artist-a-name"><a href="">Artist</a></p>
+                        </li>
+                        <li class="artist-slide swiper-slide">
+                            <div class="img-artist-wrapper">
+                                <img src="img/artists/ani.jpg" alt="" class="artist-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="artist-s-name">Anirudh Ravichander</p>
+                            <p class="artist-a-name"><a href="">Artist</a></p>
+                        </li>
+                        <li class="artist-slide swiper-slide">
+                            <div class="img-artist-wrapper">
+                                <img src="img/artists/pritam.jpg" alt="" class="artist-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="artist-s-name">Pritam</p>
+                            <p class="artist-a-name"><a href="">Artist</a></p>
+                        </li>
+                        <li class="artist-slide swiper-slide">
+                            <div class="img-artist-wrapper">
+                                <img src="img/artists/atif.jpg" alt="" class="artist-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="artist-s-name">Atif Aslam</p>
+                            <p class="artist-a-name"><a href="">Artist</a></p>
+                        </li>
+                        <li class="artist-slide swiper-slide">
+                            <div class="img-artist-wrapper">
+                                <img src="img/artists/sachin.jpg" alt="" class="artist-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="artist-s-name">Sachin-Jigar</p>
+                            <p class="artist-a-name"><a href="">Artist</a></p>
+                        </li>
+                        <li class="artist-slide swiper-slide">
+                            <div class="img-artist-wrapper">
+                                <img src="img/artists/vishal.jpg" alt="" class="artist-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="artist-s-name">Vishal-Shekhar</p>
+                            <p class="artist-a-name"><a href="">Artist</a></p>
+                        </li>
+                        <li class="artist-slide swiper-slide">
+                            <div class="img-artist-wrapper">
+                                <img src="img/artists/yoyo.jpg" alt="" class="artist-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="artist-s-name">Yo Yo Honey Singh</p>
+                            <p class="artist-a-name"><a href="">Artist</a></p>
+                        </li>
+                        <li class="artist-slide swiper-slide">
+                            <div class="img-artist-wrapper">
+                                <img src="img/artists/udit.jpg" alt="" class="artist-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="artist-s-name">Udit Narayan</p>
+                            <p class="artist-a-name"><a href="">Artist</a></p>
+                        </li>
+                        <li class="artist-slide swiper-slide">
+                            <div class="img-artist-wrapper">
+                                <img src="img/artists/shankar.jpg" alt="" class="artist-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="artist-s-name">Shankar-Ehsaan-Loy</p>
+                            <p class="artist-a-name"><a href="">Artist</a></p>
+                        </li>
+                    </ul>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <!-- popular albums -->
+            <div class="album">
+                <div class="album-header">
+                    <h3>Popular albums</h3>
+                    <a href="">Show all</a>
+                </div>
+                <div class="album-swipe swiper">
+                    <ul class="album-list swiper-wrapper">
+                        <li class="album-slide swiper-slide">
+                            <div class="img-album-wrapper">
+                                <img src="img/albums/kabirsingh.jpg" alt="" class="album-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="album-s-name">Kabir Singh</p>
+                            <p class="album-a-name"><a href="">Sachet-Parampara</a></p>
+                        </li>
+                        <li class="album-slide swiper-slide">
+                            <div class="img-album-wrapper">
+                                <img src="img/albums/yehhai.jpg" alt="" class="album-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="album-s-name">Yeh Jawaani Hai Deewani</p>
+                            <p class="album-a-name"><a href="">Pritam</a></p>
+                        </li>
+                        <li class="album-slide swiper-slide">
+                            <div class="img-album-wrapper">
+                                <img src="img/albums/ashiqi.jpg" alt="" class="album-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="album-s-name">Aashiqui 2</p>
+                            <p class="album-a-name"><a href="">Mithoon, Ankit Tiwari, Jeet Gannguli</a></p>
+                        </li>
+                        <li class="album-slide swiper-slide">
+                            <div class="img-album-wrapper">
+                                <img src="img/albums/young.jpg" alt="" class="album-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="album-s-name">young G.O.A.T</p>
+                            <p class="album-a-name"><a href="">Cheema Y, Gur Sidhu</a></p>
+                        </li>
+                        <li class="album-slide swiper-slide">
+                            <div class="img-album-wrapper">
+                                <img src="img/albums/findingher.jpg" alt="" class="album-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="album-s-name">Finding Her</p>
+                            <p class="album-a-name"><a href="">Kushagra, Bharath, Saaheal</a></p>
+                        </li>
+                        <li class="album-slide swiper-slide">
+                            <div class="img-album-wrapper">
+                                <img src="img/albums/arjit.jpg" alt="" class="album-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="album-s-name">Ultimate Love Songs - Arjit Singh</p>
+                            <p class="album-a-name"><a href="">Arjit Singh</a></p>
+                        </li>
+                        
+                        <li class="album-slide swiper-slide">
+                            <div class="img-album-wrapper">
+                                <img src="img/albums/raanjhan.jpg" alt="" class="album-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="album-s-name">Raanjhan</p>
+                            <p class="album-a-name"><a href="">Sachet-Parampara, Parampara Tandon,Kaus...</a></p>
+                        </li>
+                        
+                        <li class="album-slide swiper-slide">
+                            <div class="img-album-wrapper">
+                                <img src="img/albums/makingmemories.jpg" alt="" class="album-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="album-s-name">Making Memories</p>
+                            <p class="album-a-name"><a href="">Karan Aujla, Ikky</a></p>
+                        </li>
+                        <li class="album-slide swiper-slide">
+                            <div class="img-album-wrapper">
+                                <img src="img/albums/sanamkasam.jpg" alt="" class="album-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="album-s-name">Sanam Teri Kasam</p>
+                            <p class="album-a-name"><a href="">Himesh Reshammiya, Sameer Anjaan,Subrat...</a></p>
+                        </li>
+                        <li class="album-slide swiper-slide">
+                            <div class="img-album-wrapper">
+                                <img src="img/albums/sicario.jpg" alt="" class="album-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="album-s-name">Sicario</p>
+                            <p class="album-a-name"><a href="">Shubh</a></p>
+                        </li>
+                    </ul>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <!-- popular radio -->
+            <div class="radio">
+                <div class="radio-header">
+                    <h3>Popular radio</h3>
+                    <a href="">Show all</a>
+                </div>
+                <div class="radio-swipe swiper">
+                    <ul class="radio-list swiper-wrapper">
+                        <li class="radio-slide swiper-slide">
+                            <div class="img-radio-wrapper">
+                                <img src="img/radio/arjith.jpg" alt="" class="radio-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="radio-a-name"><a href="">With Jeet Gannguli, Atif Aslam, Pritam and more</a></p>
+                        </li>
+                        <li class="radio-slide swiper-slide">
+                            <div class="img-radio-wrapper">
+                                <img src="img/radio/kk.jpg" alt="" class="radio-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="radio-a-name"><a href="">With Pritam,Vishal-Shaekhar, Shankar-...</a></p>
+                        </li>
+                        <li class="radio-slide swiper-slide">
+                            <div class="img-radio-wrapper">
+                                <img src="img/radio/yoyo.jpg" alt="" class="radio-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="radio-a-name"><a href="">With Badshah, Pritam, Guru Radhawa and...</a></p>
+                        </li>
+                        <li class="radio-slide swiper-slide">
+                            <div class="img-radio-wrapper">
+                                <img src="img/radio/sreyaG.jpg" alt="" class="radio-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="radio-a-name"><a href="">With A.R. Rahman, Atif Aslam, Arjit Singh and...</a></p>
+                        </li>
+                        <li class="radio-slide swiper-slide">
+                            <div class="img-radio-wrapper">
+                                <img src="img/radio/diljit.jpg" alt="" class="radio-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="radio-a-name"><a href="">With Karan Aujla, Subh, Ap Dhillon and more</a></p>
+                        </li>
+                        <li class="radio-slide swiper-slide">
+                            <div class="img-radio-wrapper">
+                                <img src="img/radio/alka.jpg" alt="" class="radio-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="radio-a-name"><a href="">With Vinod Rathod, Kumar Sanu, Udit...</a></p>
+                        </li>
+                        
+                        <li class="radio-slide swiper-slide">
+                            <div class="img-radio-wrapper">
+                                <img src="img/radio/kumar.jpg" alt="" class="radio-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="radio-a-name"><a href="">With Anuradha Paudwal Asha Bhosle, Jatin-Lalit...</a></p>
+                        </li>
+                        
+                        <li class="radio-slide swiper-slide">
+                            <div class="img-radio-wrapper">
+                                <img src="img/radio/sidhu.jpg" alt="" class="radio-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="radio-a-name"><a href="">With Subh, Ap Dhillon, Prem Dhillon and more</a></p>
+                        </li>
+                        <li class="radio-slide swiper-slide">
+                            <div class="img-radio-wrapper">
+                                <img src="img/radio/kishore.jpg" alt="" class="radio-img">
+                                <button class="play_btn"><span
+                                        class="play-icon material-symbols-outlined">play_arrow</span></button>
+                            </div>
+                            <p class="radio-a-name"><a href="">With Mukesh, Tabassum, Hemant Kumar and more</a></p>
+                        </li>
+
+                    </ul>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <!-- Featured charts  -->
+            <div class="charts">
+                <div class="charts-header">
+                    <h3>Popular charts</h3>
+                    <a href="">Show all</a>
+                </div>
+                <div class="charts-swipe swiper">
+                    <ul class="charts-list swiper-wrapper">
+                        <li class="charts-slide swiper-slide">
+                            <div class="img-charts-wrapper">
+                                <img src="img/charts/topGlobal.jpg" alt="" class="charts-img">
+                                <button class="play_btn">
+                                    <span class="play-icon material-symbols-outlined">play_arrow</span>
+                                </button>
+                            </div>
+                            <p class="charts-a-name"><a href="">Your weekly update of most played track...</a></p>
+                        </li>
+                        <li class="charts-slide swiper-slide">
+                            <div class="img-charts-wrapper">
+                                <img src="img/charts/topIndia.jpg" alt="" class="charts-img">
+                                <button class="play_btn">
+                                    <span class="play-icon material-symbols-outlined">play_arrow</span>
+                                </button>
+                            </div>
+                            <p class="charts-a-name"><a href="">Your weekly update of most played track...</a></p>
+                        </li>
+                        <li class="charts-slide swiper-slide">
+                            <div class="img-charts-wrapper">
+                                <img src="img/charts/top50G.jpg" alt="" class="charts-img">
+                                <button class="play_btn">
+                                    <span class="play-icon material-symbols-outlined">play_arrow</span>
+                                </button>
+                            </div>
+                            <p class="charts-a-name"><a href="">Your daily update of most played track...</a></p>
+                        </li>
+                        <li class="charts-slide swiper-slide">
+                            <div class="img-charts-wrapper">
+                                <img src="img/charts/top50India.jpg" alt="" class="charts-img">
+                                <button class="play_btn">
+                                    <span class="play-icon material-symbols-outlined">play_arrow</span>
+                                </button>
+                            </div>
+                            <p class="charts-a-name"><a href="">Your daily update of most played track...</a></p>
+                        </li>
+                        <li class="charts-slide swiper-slide">
+                            <div class="img-charts-wrapper">
+                                <img src="img/charts/viral50G.jpg" alt="" class="charts-img">
+                                <button class="play_btn">
+                                    <span class="play-icon material-symbols-outlined">play_arrow</span>
+                                </button>
+                            </div>
+                            <p class="charts-a-name"><a href="">Your daily update of the most viral tracks right...</a>
+                            </p>
+                        </li>
+                        <li class="charts-slide swiper-slide">
+                            <div class="img-charts-wrapper">
+                                <img src="img/charts/viral50.jpg" alt="" class="charts-img">
+                                <button class="play_btn">
+                                    <span class="play-icon material-symbols-outlined">play_arrow</span>
+                                </button>
+                            </div>
+                            <p class="charts-a-name"><a href="">Your daily update of the most viral tracks right...</a>
+                            </p>
+                        </li>
+
+                    </ul>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <!-- main-footer  -->
+            <div class="main-footer">
+                <div class="footer-links">
+                    <div class="company-footer links">
+                        <h3>Company</h3>
+                        <a href="" class="ft-link">About</a>
+                        <a href="" class="ft-link">Jobs</a>
+                        <a href="" class="ft-link">For the Record</a>
+                    </div>
+                    <div class="community-footer links">
+                        <h3>Communities</h3>
+                        <a href="" class="ft-link">For Artists</a>
+                        <a href="" class="ft-link">Developers</a>
+                        <a href="" class="ft-link">Advertising</a>
+                        <a href="" class="ft-link">Investors</a>
+                        <a href="" class="ft-link">Vendors</a>
+                    </div>
+                    <div class="links-footer links">
+                        <h3>Useful links</h3>
+                        <a href="" class="ft-link">Support</a>
+                        <a href="" class="ft-link">Free Mobile App</a>
+                        <a href="" class="ft-link">Popular by Country</a>
+                        <a href="" class="ft-link">Import your music</a>
+                    </div>
+                    <div class="plans-footer links">
+                        <h3>Spotify Plans</h3>
+                        <a href="" class="ft-link">Premium Individuals</a>
+                        <a href="" class="ft-link">Premium Duo</a>
+                        <a href="" class="ft-link">Premium Family</a>
+                        <a href="" class="ft-link">Premium Student</a>
+                        <a href="" class="ft-link">Spotify Free</a>
+                    </div>
+                    <div class="social-links">
+                        <div class="social-links-wrapper">
+                            <button>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-facebook"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
